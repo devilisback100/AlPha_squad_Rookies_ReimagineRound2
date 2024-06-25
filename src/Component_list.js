@@ -1,2 +1,15 @@
 export {default as  Navbar } from "./Components/navbar/Navbar"
+export { default as BrandSlider } from "./Components/brand_slider/BrandSlider"
+
 export {default as amul_logo} from  "./Assets/amul_logo.png"
+export {default as BabyCowImage} from  "./Assets/baby_cow.jpg"
+
+export {default as Amul_butter} from "./Assets/Amul_butter.jpg"
+export {default as Amul_cheese} from "./Assets/Amul_cheese.webp"
+export {default as Amul_chocolates} from "./Assets/Amul_chocolates.webp"
+export {default as Amul_milk} from "./Assets/Amul_milk.png"
+export {default as Amul_sweets} from "./Assets/Amul_sweets.jpg"
+export {default as Amul_paneer} from "./Assets/Amul_paneer.avif"
+export {default as Amul_Ice_cream} from "./Assets/Amul_Ice_cream.jpg"
+export {default as Amul_dahi} from "./Assets/Amul_dahi.webp"
+export {default as Amul_ghee} from "./Assets/Amul_ghee.jpg"

@@ -1,0 +1,144 @@
+.BrandSlider {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+.Brand_list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.Item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 15px;
+    height: 90%;
+}
+
+.Blur_Images {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    overflow: visible;
+}
+
+.Arrows {
+    z-index: 3;
+    position: absolute;
+    width: 90%;
+    bottom: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Brand_intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    flex: 4;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.Brand_intro .Brand_name .Brand_desc {
+    width: max-content;
+    height: max-content;
+
+}
+
+.Brand_name {
+    font-weight: bolder;
+    scale: 1.5;
+}
+
+
+.Brand_child_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+}
+
+.Brand_Image {
+    width: 30vw;
+    height: fit-content;
+    overflow: none;
+}
+
+.prev_arrow,
+.next_arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+        background-color: transparent;
+            color: var(--color-3);}
+
+/* Media Screen */
+@media screen and (max-width:550px) {
+    .Brand_intro {
+        row-gap: 10px;
+        flex: 6;
+    }
+
+    .Brand_desc {
+        color: var(--color-4);
+    }
+
+    .Brand_Image {
+        width: 45vw;
+    }
+
+    .Blur_Images .Brand_Image {
+        position: absolute;
+        display: none;
+    }
+
+    .Blur_Images .Brand_Image:nth-child(1) {
+        display: block;
+        scale: 0.5 !important;
+        transform: translate(-90%, -10%) !important;
+    }
+
+    .Brand {
+        width: 85%;
+    }
+
+    .Brand_child_2 {
+        flex: 4;
+    }
+
+ 
+}

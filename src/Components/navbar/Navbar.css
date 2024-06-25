@@ -35,12 +35,11 @@
     }
 }
 
-.navbar {
-    overflow: hidden;
-}
+
 
 .Amul_navbar,
 .mobile_navbar {
+    z-index: 100;
     background-color: transparent;
     width: 100%;
     height: 8%;
@@ -136,6 +135,7 @@
     color: var(--color-2);
     margin: 5px;
     padding: 5px;
+    font-weight: bold;
 }
 
 .navbar_dropdown a:hover {
@@ -158,6 +158,7 @@
     margin: auto;
     color: var(--color-3);
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* media queries */
