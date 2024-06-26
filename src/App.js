@@ -1,6 +1,6 @@
 import './App.css';
 import React,{useState} from 'react';
-import { Navbar,BrandSlider,ProductSlider } from './Component_list';
+import { Navbar,BrandSlider,ProductSlider,Footer } from './Component_list';
 function App() {
   const [Brand_check, Set_Brand_check] =useState(false)
   return (
@@ -8,7 +8,7 @@ function App() {
       <Navbar Brand_check={Set_Brand_check} />
       <ProductSlider />
       {Brand_check && <BrandSlider />}
-      
+      <Footer/>
     </div>
   );
 }

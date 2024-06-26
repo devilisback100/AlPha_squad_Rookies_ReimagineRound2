@@ -1,6 +1,7 @@
 export {default as  Navbar } from "./Components/navbar/Navbar"
 export { default as BrandSlider } from "./Components/brand_slider/BrandSlider"
 export { default as ProductSlider } from "./Components/productSlider/ProductSlider"
+export { default as Footer } from "./Components/Footer/Footer"
 
 export {default as amul_logo} from  "./Assets/amul_logo.png"
 export {default as BabyCowImage} from  "./Assets/baby_cow.jpg"
