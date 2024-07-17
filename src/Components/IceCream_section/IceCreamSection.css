@@ -1,0 +1,192 @@
+@keyframes wipe-out-right {
+    from {
+        clip-path: inset(0 0 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 100%);
+    }
+}
+
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes wipe-in-left {
+    from {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes wipe-out-left {
+    from {
+        clip-path: inset(0 0 0 0);
+    }
+
+    to {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+
+.Exit_animation_1 {
+    animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-out-right both;
+    animation-delay: 1500ms;
+}
+
+.Exit_animation_2 {
+    animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-out-left both;
+    animation-delay: 1500ms;
+}
+
+.Entry_animation_1 {
+    animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+    animation-delay: 1500ms;
+}
+
+.Entry_animation_2 {
+    animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+    animation-delay: 1500ms;
+}
+
+
+.IceCreamSection_Parent {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+}
+
+.IceCreamSection_child_1 {
+    position: absolute;
+}
+
+.Amul_Logo_3 {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+}
+
+.IceCreamSection_child_2 {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+.Amul_Banner_1 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transition: ease-in-out;
+}
+
+.IceCreamSection_child_2_box_1 {
+    width: 100vw;
+    height: max-content;
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    top: 70%;
+    justify-content: space-evenly;
+}
+
+.IceCreamImage {
+    position: relative;
+    width: 220px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Ice-Cream,
+.Water-shade {
+    position: absolute;
+}
+
+.Water-shade {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.Ice-Cream {
+    z-index: 2;
+    opacity: 0.7;
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+}
+
+.Ice-Cream:hover {
+    transform: rotate(30deg);
+    scale: 0.85;
+    bottom: 10px;
+}
+
+
+/* Media Screen */
+@media screen and (max-width:950px) {
+    .IceCreamImage {
+        width: 160px;
+        height: 134px;
+    }
+
+    .IceCreamSection_child_2_box_1 {
+        top: 75%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .IceCreamImage {
+        width: 150px;
+        height: 125px;
+    }
+
+    .IceCreamSection_child_2_box_1 {
+        top: 80%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .IceCreamImage {
+        width: 110px;
+        height: 92px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .IceCreamImage {
+        width: 110px;
+        height: 92px;
+    }
+
+    .IceCreamSection_child_2_box_1 {
+        flex-wrap: wrap-reverse;
+        height: 30%;
+        top: 65%;
+    }
+
+    .Ice-Cream {
+        opacity: 0.6;
+    }
+}

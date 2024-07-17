@@ -128,6 +128,7 @@
     left: 40%;
     -webkit-animation: scale-in-ver-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-ver-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 5;
 }
 
 .navbar_dropdown a {

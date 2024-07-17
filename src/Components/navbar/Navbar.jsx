@@ -95,7 +95,7 @@ function Navbar({ Brand_check }) {
                 </div>
             </nav>
             <ul className='mobile_navabar_child_1' style={{ display: mobile_navbar_check && dropDown_data[0].length === 0 ? "flex" : "none" }}>
-                <li onClick={(e) => { SetdropDown_data([[]]); Brand_check(a => !a); Setmobile_navbar_check(false) }}>Brands</li>
+                <li onClick={(e) => { SetdropDown_data([[]]); Brand_check(a=>!a); Setmobile_navbar_check(false) }}>Brands</li>
                 <li onClick={(e) => { SetdropDown_data(GCMMF_data); Setmobile_navbar_check(false) }}>GCMMF</li>
                 <li onClick={(e) => { SetdropDown_data(FunAmul_data); Setmobile_navbar_check(false) }}>Fun @ amul</li>
                 <li onClick={(e) => { SetdropDown_data(Dairy_News_data); Setmobile_navbar_check(false) }}>Dairy News</li>

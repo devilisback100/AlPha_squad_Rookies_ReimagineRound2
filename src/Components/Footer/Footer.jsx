@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 function Footer() {
   return (
-      <div >
+      <div style={{height:"max-content"}}>
       <footer className="footer">
           <div className="footer-content">
               <p>© 2024 Amul. All rights reserved.</p>
@@ -12,15 +12,15 @@ function Footer() {
               </p>
               <p>
                   Follow us on:
-                  <a href="https://www.facebook.com/website" target="_blank">
+                  <a href="https://www.facebook.com/website" target="_blank" rel="noreferrer">
                       Facebook
                   </a>
                   ,{" "}
-                  <a href="https://www.twitter.com/website" target="_blank">
+                  <a href="https://www.twitter.com/website" target="_blank" rel="noreferrer">
                       Twitter
                   </a>
                   ,
-                  <a href="https://www.instagram.com/website" target="_blank">
+                  <a href="https://www.instagram.com/website" target="_blank" rel="noreferrer">
                       Instagram
                   </a>
               </p>
